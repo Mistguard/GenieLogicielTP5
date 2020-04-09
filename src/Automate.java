@@ -22,4 +22,10 @@ public class Automate implements IEvenement {
     public void evenement2() {
         etatCourant.evenement2(this);
     }
+
+    public Automate(X x){
+        x.setControlleur(this);
+        controlee = x;
+        etatCourant = new Etat1();
+    }
 }

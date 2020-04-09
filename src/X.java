@@ -2,6 +2,14 @@ public class X implements IEvenement{
 
     private Automate controlleur;
 
+    public Automate getControlleur() {
+        return controlleur;
+    }
+
+    public void setControlleur(Automate controlleur) {
+        this.controlleur = controlleur;
+    }
+
     @Override
     public void evenement1() {
         controlleur.evenement1();
