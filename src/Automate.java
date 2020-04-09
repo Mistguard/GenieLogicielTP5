@@ -1,10 +1,16 @@
 
 public class Automate implements IEvenement {
 
-    public IEtat etatCourant;
+    private X controlee;
+
+    private IEtat etatCourant;
 
     public void changementEtat(IEtat etat){
         etatCourant = etat;
+    }
+
+    public X getControlee(){
+        return controlee;
     }
 
     @Override
